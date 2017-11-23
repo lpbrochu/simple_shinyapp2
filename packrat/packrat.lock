@@ -30,6 +30,12 @@ Source: CRAN
 Version: 0.12.13
 Hash: b9d8d89ff10ca2d8bfdaccdf83045ba1
 
+Package: accelerometry
+Source: CRAN
+Version: 2.2.5
+Hash: b23b5fa16dad020cc245cc5534ea0664
+Requires: Rcpp
+
 Package: base64enc
 Source: CRAN
 Version: 0.1-3

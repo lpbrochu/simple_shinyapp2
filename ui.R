@@ -1,4 +1,4 @@
-brary(shiny)
+library(shiny)
 
 # Define UI for dataset viewer application
 shinyUI(pageWithSidebar(

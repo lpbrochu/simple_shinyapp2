@@ -1,5 +1,7 @@
 library(shiny)
 library(datasets)
+library(accelerometry)
+
 
 # Define server logic required to summarize and view the selected dataset
 shinyServer(function(input, output) {
@@ -15,6 +17,9 @@ shinyServer(function(input, output) {
   # Generate a summary of the dataset
   output$summary <- renderPrint({
     dataset <- datasetInput()
+    data(unidata)
+    weartime.flag <- accel.weartime(counts = counts.part1)
+    counts.part1 <- unidata[unidata[, "seqn"] == 21005, "paxinten"]
     summary(dataset)
   })
 
