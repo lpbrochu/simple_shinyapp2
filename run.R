@@ -1,3 +1,3 @@
-install.packages(c('datasets', 'shiny', 'rsconnect'))
+install.packages(c('shiny', 'rsconnect'))
 library(rsconnect)
 rsconnect::deployApp()
